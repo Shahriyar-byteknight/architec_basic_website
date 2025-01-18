@@ -1,5 +1,4 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
+
 @import url(https://fonts.google.com/specimen/Work+Sans);
 .work-sans-fonts {
   font-family: "Work Sans", serif;
@@ -29,6 +28,19 @@ font-size: 1.5rem;
 font-weight: 600;
 border-radius: 8px;
 border: none;
+}
+.text-primary{
+    color: #FF900E;
+    }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 120px;
+}
+.fact-description{
+max-width: 540px;
 }
 /* Shared style end */
 /* header style */
@@ -76,9 +88,110 @@ border: none;
 .banner-iamge{
     width: 100%;
 }
+/* team style */
+.team{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.our-features{
+margin-left: 37px;
+max-width: 530px;
+}
+.feature-title{
+    font-size: 2.9rem;
+}
+.feature-description{
+    font-size: 1rem;
+}
+.quick-list{ 
+    font-weight: 200;
+}
+.bold{ 
+    font-weight: bold;
+   }
+/* Some facts style */
+.facts-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.facts-sub-title{
+    font-size: 1rem;
+}
+.fact-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+
+}
+.facts-card{
+    width: 240px;height: 240px;
+border: 1px solid #FF900E ;
+border-radius: 8px;
+text-align: center;
+align-content: center;
+justify-items: center;
+margin-right:120px ;
+
+}
+.fact-number{ 
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+font-weight: 600;
+font-size: 1.2rem;
+margin-top: 5px;
+}
+/* fact end */
+/* Sponsor Style */
+.sponsor-info{
+    font-weight: bold;
+    font-size: 2.8rem;
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-description{
+    font-size: 1rem;
+    text-align: center;
+}
+.sponsors-company{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.sponsors-company >img{
+    filter: grayscale(100%);
+}
 /* Responsive query */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links{
+    .navbar,.nav-links,.team{
+        flex-direction: column;
+    }
+    .team-img-container,.fact-container,.sponsors-company{
+        grid-template-columns: 1fr;
+    }
+    .sponsors-company,.facts,.fact-container{
+        justify-items: center;
+        grid-template-columns: repeat(3,1fr);
+       justify-items: center;
+    }
+    .fact-container{ 
+        margin: 0px auto;
+        justify-items: center;
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+/* medium screen style */
+@media screen and (min-width:576px)and (max-width:992px){
+    .team{
         flex-direction: column;
     }
 }
