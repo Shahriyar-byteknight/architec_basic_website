@@ -168,6 +168,49 @@ margin-top: 5px;
 .sponsors-company >img{
     filter: grayscale(100%);
 }
+/* feature apu start */
+.features{
+    gap: 100px;
+    
+}
+#feature-section-title{
+     border-left: 5px solid tomato;
+     padding: 20px;
+} 
+ .enjoy-description{
+    font-size: 1rem;
+    color: #727272;
+ }   
+ .enjoy-card{
+    margin-top: 0;
+    padding:  25px;
+    box-shadow:0 4px 30px 0 rgba(0,0,0,0.06) ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+ }
+ .enjoy-card-title{
+    font-weight: 500;
+    font-size: 1.2rem;
+ }
+ .enjoy-card-description{ 
+    color: #727272;
+    font-size: 1rem;
+ }
+ /* Button experience */
+ #experience-badge{
+    padding: 42px 40px;
+    font-weight: medium;
+    font-size: 1.5rem;
+    margin-left: -80px;
+    margin-top: -100px;
+ }
+ #experience-year{
+    font-weight: bold;
+    font-size: 3.8rem;
+ }
+.feature-architec img{
+     width: 100%; 
+}
 /* Responsive query */
 @media screen and (max-width:576px) {
     .navbar,.nav-links,.team{
@@ -187,6 +230,13 @@ margin-top: 5px;
     }
     .our-features{
         margin-left: 20px;
+    }
+    .features{
+
+    }
+    #experience-badge{
+        margin: 20px;
+        
     }
 }
 /* medium screen style */
